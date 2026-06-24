@@ -10,13 +10,9 @@
       
       
       
-        <link rel="canonical" href="https://chopratejas.github.io/headroom/LATENCY_BENCHMARKS/">
+        <link rel="canonical" href="https://chopratejas.github.io/headroom/typescript-sdk/">
       
       
-        <link rel="prev" href="../benchmarks/">
-      
-      
-        <link rel="next" href="../LIMITATIONS/">
       
       
         
@@ -27,7 +23,7 @@
     
     
       
-        <title>Latency - Headroom</title>
+        <title>TypeScript SDK - Headroom</title>
       
     
     
@@ -80,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#headroom-latency-benchmarks" class="md-skip">
+        <a href="#typescript-sdk" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Latency
+              TypeScript SDK
             
           </span>
         </div>
@@ -333,12 +329,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../benchmarks/" class="md-tabs__link">
           
   
@@ -1391,10 +1385,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1408,22 +1400,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1441,7 +1432,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1484,37 +1475,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Latency
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LATENCY_BENCHMARKS/" class="md-nav__link">
         
   
   
@@ -1530,103 +1494,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TL;DR
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compression-overhead-by-scenario" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Compression Overhead by Scenario
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#per-transform-latency-breakdown" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Per-Transform Latency Breakdown
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-benefit-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost-Benefit Analysis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#break-even-across-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Break-Even Across Models
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Takeaways
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2060,10 +1927,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#install" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
+        Install
       
     </span>
   </a>
@@ -2071,10 +1938,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
+  <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TL;DR
+        Quick Start
       
     </span>
   </a>
@@ -2082,10 +1949,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#compression-overhead-by-scenario" class="md-nav__link">
+  <a href="#how-it-works" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Compression Overhead by Scenario
+        How It Works
       
     </span>
   </a>
@@ -2093,10 +1960,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#per-transform-latency-breakdown" class="md-nav__link">
+  <a href="#core-api-compress" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Per-Transform Latency Breakdown
+        Core API: compress()
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core API: compress()">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reusable-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reusable Client
       
     </span>
   </a>
@@ -2104,10 +1999,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-benefit-analysis" class="md-nav__link">
+  <a href="#framework-adapters" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost-Benefit Analysis
+        Framework Adapters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Framework Adapters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vercel-ai-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vercel AI SDK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#openai-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAI SDK
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anthropic-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anthropic SDK
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Handling
       
     </span>
   </a>
@@ -2115,10 +2060,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#break-even-across-models" class="md-nav__link">
+  <a href="#fallback-behavior" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Break-Even Across Models
+        Fallback Behavior
       
     </span>
   </a>
@@ -2126,10 +2071,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
+  <a href="#zero-dependencies" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Key Takeaways
+        Zero Dependencies
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openclaw-plugin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenClaw Plugin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comparison-with-python-sdk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comparison with Python SDK
       
     </span>
   </a>
@@ -2156,613 +2123,240 @@
   
 
 
-<h1 id="headroom-latency-benchmarks">Headroom Latency Benchmarks<a class="headerlink" href="#headroom-latency-benchmarks" title="Permanent link">&para;</a></h1>
-<p>Measured compression overhead across content types and sizes to answer: <strong>does the token savings outweigh the processing time?</strong></p>
-<p>Generated: 2026-02-24 01:11 UTC</p>
-<h2 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
+<h1 id="typescript-sdk">TypeScript SDK<a class="headerlink" href="#typescript-sdk" title="Permanent link">&para;</a></h1>
+<p>The Headroom TypeScript SDK lets any JavaScript or TypeScript application compress LLM messages before sending them to a model. It saves tokens, reduces costs, and fits more context into every request.</p>
+<h2 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h2>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npm<span class="w"> </span>install<span class="w"> </span>headroom-ai
+</span></code></pre></div>
+<p>Requires a running <a href="../proxy/">Headroom proxy</a> or Headroom Cloud API key.</p>
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">compress</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai&#39;</span><span class="p">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">compress</span><span class="p">(</span><span class="nx">messages</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="sb">`Saved </span><span class="si">${</span><span class="nx">result</span><span class="p">.</span><span class="nx">tokensSaved</span><span class="si">}</span><span class="sb"> tokens`</span><span class="p">);</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">openai</span><span class="p">.</span><span class="nx">chat</span><span class="p">.</span><span class="nx">completions</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="p">,</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">result.messages</span><span class="p">,</span>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="p">});</span>
+</span></code></pre></div>
+<h2 id="how-it-works">How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<p>The TypeScript SDK is an HTTP client. When you call <code>compress()</code>, it sends your messages to the Headroom proxy's <code>POST /v1/compress</code> endpoint. The proxy runs the full compression pipeline (SmartCrusher, ContentRouter, CacheAligner, etc.) and returns compressed messages. No compression logic runs in Node.js — all the heavy lifting happens in the proxy.</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Your TypeScript App
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>    │
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    │  compress(messages)
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    ▼
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>headroom-ai (npm)  ← HTTP client
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    │
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    │  POST /v1/compress
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    ▼
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>Headroom Proxy / Cloud  ← compression pipeline (Python)
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>    │
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>    │  compressed messages
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    ▼
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>Your TypeScript App
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    │
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    │  openai.chat.completions.create(compressed)
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    ▼
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>LLM Provider
+</span></code></pre></div>
+<h2 id="core-api-compress">Core API: <code>compress()</code><a class="headerlink" href="#core-api-compress" title="Permanent link">&para;</a></h2>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">compress</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai&#39;</span><span class="p">;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">compress</span><span class="p">(</span><span class="nx">messages</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="p">,</span><span class="w">                      </span><span class="c1">// model name (for token counting)</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="nx">baseUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;http://localhost:8787&#39;</span><span class="p">,</span><span class="w">      </span><span class="c1">// proxy URL (default)</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;hr_...&#39;</span><span class="p">,</span><span class="w">                      </span><span class="c1">// Headroom Cloud key</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="nx">timeout</span><span class="o">:</span><span class="w"> </span><span class="kt">30000</span><span class="p">,</span><span class="w">                        </span><span class="c1">// ms (default)</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="nx">fallback</span><span class="o">:</span><span class="w"> </span><span class="kt">true</span><span class="p">,</span><span class="w">                        </span><span class="c1">// return uncompressed if proxy down (default)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nx">retries</span><span class="o">:</span><span class="w"> </span><span class="kt">1</span><span class="p">,</span><span class="w">                            </span><span class="c1">// retry on transient errors (default)</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">});</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="nx">result</span><span class="p">.</span><span class="nx">messages</span><span class="w">          </span><span class="c1">// compressed messages (same format as input)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="nx">result</span><span class="p">.</span><span class="nx">tokensBefore</span><span class="w">      </span><span class="c1">// original token count</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="nx">result</span><span class="p">.</span><span class="nx">tokensAfter</span><span class="w">       </span><span class="c1">// compressed token count</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="nx">result</span><span class="p">.</span><span class="nx">tokensSaved</span><span class="w">       </span><span class="c1">// tokens removed</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="nx">result</span><span class="p">.</span><span class="nx">compressionRatio</span><span class="w">  </span><span class="c1">// tokensAfter / tokensBefore</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="nx">result</span><span class="p">.</span><span class="nx">transformsApplied</span><span class="w"> </span><span class="c1">// e.g. [&#39;router:smart_crusher:0.35&#39;]</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="nx">result</span><span class="p">.</span><span class="nx">compressed</span><span class="w">        </span><span class="c1">// false if fallback kicked in</span>
+</span></code></pre></div>
+<p>Messages use standard OpenAI chat format: <code>{ role, content, tool_calls?, tool_call_id? }</code>.</p>
+<h3 id="environment-variables">Environment Variables<a class="headerlink" href="#environment-variables" title="Permanent link">&para;</a></h3>
+<p>Instead of passing options, set environment variables:</p>
 <ul>
-<li><strong>Platform</strong>: macOS-26.1-arm64-arm-64bit</li>
-<li><strong>Processor</strong>: arm</li>
-<li><strong>Python</strong>: 3.11.11</li>
-<li><strong>Headroom</strong>: v0.3.7</li>
+<li><code>HEADROOM_BASE_URL</code> — proxy or cloud URL (default: <code>http://localhost:8787</code>)</li>
+<li><code>HEADROOM_API_KEY</code> — Headroom Cloud API key</li>
 </ul>
-<blockquote>
-<p><strong>Note:</strong> These benchmarks were captured on v0.3.7. Since then, v0.5.6 added parallel message compression, eliminated redundant token counting, and optimized hot-path hashing. Expect lower latency on current versions. Re-benchmarking is planned.</p>
-</blockquote>
-<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Average compression: <strong>93%</strong> token reduction</li>
-<li>Maximum compression overhead: <strong>12213ms</strong> (p50)</li>
-<li>Net latency win: <strong>11/12</strong> scenarios against Claude Sonnet 4.5</li>
-</ul>
-<h2 id="compression-overhead-by-scenario">Compression Overhead by Scenario<a class="headerlink" href="#compression-overhead-by-scenario" title="Permanent link">&para;</a></h2>
+<h2 id="reusable-client">Reusable Client<a class="headerlink" href="#reusable-client" title="Permanent link">&para;</a></h2>
+<p>For apps making many calls, create a client once and reuse it:</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">HeadroomClient</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai&#39;</span><span class="p">;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">HeadroomClient</span><span class="p">({</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nx">baseUrl</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;http://localhost:8787&#39;</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nx">apiKey</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;hr_...&#39;</span><span class="p">,</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">});</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">r1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">compress</span><span class="p">(</span><span class="nx">messages1</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">r2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">compress</span><span class="p">(</span><span class="nx">messages2</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="w"> </span><span class="p">});</span>
+</span></code></pre></div>
+<h2 id="framework-adapters">Framework Adapters<a class="headerlink" href="#framework-adapters" title="Permanent link">&para;</a></h2>
+<h3 id="vercel-ai-sdk">Vercel AI SDK<a class="headerlink" href="#vercel-ai-sdk" title="Permanent link">&para;</a></h3>
+<p>The Headroom middleware plugs directly into Vercel AI SDK's <code>wrapLanguageModel()</code>:</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">headroomMiddleware</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai/vercel-ai&#39;</span><span class="p">;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">wrapLanguageModel</span><span class="p">,</span><span class="w"> </span><span class="nx">generateText</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;ai&#39;</span><span class="p">;</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">openai</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@ai-sdk/openai&#39;</span><span class="p">;</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="kd">const</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">wrapLanguageModel</span><span class="p">({</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="kt">openai</span><span class="p">(</span><span class="s1">&#39;gpt-4o&#39;</span><span class="p">),</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span><span class="nx">middleware</span><span class="o">:</span><span class="w"> </span><span class="kt">headroomMiddleware</span><span class="p">(),</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="p">});</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1">// All calls through this model are automatically compressed</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">text</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">generateText</span><span class="p">({</span><span class="w"> </span><span class="nx">model</span><span class="p">,</span><span class="w"> </span><span class="nx">messages</span><span class="w"> </span><span class="p">});</span>
+</span></code></pre></div>
+<p>The middleware intercepts messages in the <code>transformParams</code> hook, converts Vercel's internal format to OpenAI format, compresses via the proxy, and converts back. Your app code doesn't change.</p>
+<p>You can also compress Vercel messages directly:</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">compressVercelMessages</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai/vercel-ai&#39;</span><span class="p">;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">compressVercelMessages</span><span class="p">(</span><span class="nx">modelMessages</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1">// result.messages is in Vercel ModelMessage[] format</span>
+</span></code></pre></div>
+<h3 id="openai-sdk">OpenAI SDK<a class="headerlink" href="#openai-sdk" title="Permanent link">&para;</a></h3>
+<p>Wrap your OpenAI client to auto-compress messages on every <code>chat.completions.create()</code> call:</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">withHeadroom</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai/openai&#39;</span><span class="p">;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">OpenAI</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;openai&#39;</span><span class="p">;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">withHeadroom</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">OpenAI</span><span class="p">());</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1">// Messages are compressed before sending — transparent to your code</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">chat</span><span class="p">.</span><span class="nx">completions</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="p">,</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">longConversation</span><span class="p">,</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>Only <code>chat.completions.create()</code> is intercepted. All other methods (embeddings, images, audio) pass through unchanged.</p>
+<h3 id="anthropic-sdk">Anthropic SDK<a class="headerlink" href="#anthropic-sdk" title="Permanent link">&para;</a></h3>
+<p>Same pattern for the Anthropic client:</p>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">withHeadroom</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai/anthropic&#39;</span><span class="p">;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">Anthropic</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;@anthropic-ai/sdk&#39;</span><span class="p">;</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">withHeadroom</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nx">Anthropic</span><span class="p">());</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="kd">const</span><span class="w"> </span><span class="nx">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">client</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;claude-sonnet-4-5-20250929&#39;</span><span class="p">,</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="nx">messages</span><span class="o">:</span><span class="w"> </span><span class="kt">longConversation</span><span class="p">,</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span><span class="nx">max_tokens</span><span class="o">:</span><span class="w"> </span><span class="kt">1024</span><span class="p">,</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="p">});</span>
+</span></code></pre></div>
+<p>Only <code>messages.create()</code> is intercepted. The adapter converts between Anthropic's content block format and OpenAI format automatically.</p>
+<h2 id="error-handling">Error Handling<a class="headerlink" href="#error-handling" title="Permanent link">&para;</a></h2>
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">compress</span><span class="p">,</span><span class="w"> </span><span class="nx">HeadroomConnectionError</span><span class="p">,</span><span class="w"> </span><span class="nx">HeadroomAuthError</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;headroom-ai&#39;</span><span class="p">;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">try</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">compress</span><span class="p">(</span><span class="nx">messages</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">model</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;gpt-4o&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">fallback</span><span class="o">:</span><span class="w"> </span><span class="kt">false</span><span class="w"> </span><span class="p">});</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="p">}</span><span class="w"> </span><span class="k">catch</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">HeadroomAuthError</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span><span class="c1">// Invalid API key (401)</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="w"> </span><span class="ow">instanceof</span><span class="w"> </span><span class="nx">HeadroomConnectionError</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="c1">// Proxy unreachable</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>With <code>fallback: true</code> (the default), connection errors and 5xx responses return the original messages uncompressed instead of throwing. Auth errors (401) and client errors (400) always throw.</p>
+<h2 id="fallback-behavior">Fallback Behavior<a class="headerlink" href="#fallback-behavior" title="Permanent link">&para;</a></h2>
+<p>By default, <code>compress()</code> never blocks your app. If the proxy is unreachable:</p>
 <table>
 <thead>
 <tr>
 <th>Scenario</th>
-<th>Tokens In</th>
-<th>Tokens Out</th>
-<th>Saved</th>
-<th>Ratio</th>
-<th>p50 (ms)</th>
-<th>p95 (ms)</th>
-<th>Mean (ms)</th>
+<th><code>fallback: true</code> (default)</th>
+<th><code>fallback: false</code></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>JSON: Search Results (100 items)</td>
-<td>10.2K</td>
-<td>1.5K</td>
-<td>8.7K</td>
-<td>86%</td>
-<td>189</td>
-<td>231</td>
-<td>196</td>
+<td>Proxy unreachable</td>
+<td>Returns uncompressed, <code>compressed: false</code></td>
+<td>Throws <code>HeadroomConnectionError</code></td>
 </tr>
 <tr>
-<td>JSON: Search Results (500 items)</td>
-<td>50.2K</td>
-<td>1.5K</td>
-<td>48.7K</td>
-<td>97%</td>
-<td>943</td>
-<td>955</td>
-<td>943</td>
+<td>Proxy 503 error</td>
+<td>Returns uncompressed after retries</td>
+<td>Throws <code>HeadroomCompressError</code></td>
 </tr>
 <tr>
-<td>JSON: Search Results (1K items)</td>
-<td>100.5K</td>
-<td>1.5K</td>
-<td>99.0K</td>
-<td>99%</td>
-<td>2012</td>
-<td>2198</td>
-<td>2032</td>
+<td>Invalid API key (401)</td>
+<td>Throws <code>HeadroomAuthError</code></td>
+<td>Throws <code>HeadroomAuthError</code></td>
 </tr>
 <tr>
-<td>JSON: Search Results (5K items)</td>
-<td>502.6K</td>
-<td>1.5K</td>
-<td>501.2K</td>
-<td>100%</td>
-<td>12213</td>
-<td>12804</td>
-<td>12223</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>38.9K</td>
-<td>1.1K</td>
-<td>37.8K</td>
-<td>97%</td>
-<td>743</td>
-<td>776</td>
-<td>744</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>43.7K</td>
-<td>605</td>
-<td>43.1K</td>
-<td>99%</td>
-<td>961</td>
-<td>1104</td>
-<td>986</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>1.1K</td>
-<td>231</td>
-<td>820</td>
-<td>78%</td>
-<td>15.0</td>
-<td>15.4</td>
-<td>15.0</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>4.9K</td>
-<td>233</td>
-<td>4.6K</td>
-<td>95%</td>
-<td>71.9</td>
-<td>80.3</td>
-<td>72.7</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>9.6K</td>
-<td>242</td>
-<td>9.4K</td>
-<td>97%</td>
-<td>146</td>
-<td>160</td>
-<td>147</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>1.2K</td>
-<td>192</td>
-<td>1.1K</td>
-<td>85%</td>
-<td>30.9</td>
-<td>61.9</td>
-<td>33.8</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>6.1K</td>
-<td>243</td>
-<td>5.8K</td>
-<td>96%</td>
-<td>301</td>
-<td>307</td>
-<td>300</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>2.3K</td>
-<td>368</td>
-<td>1.9K</td>
-<td>84%</td>
-<td>38.4</td>
-<td>39.8</td>
-<td>38.4</td>
+<td>Bad request (400)</td>
+<td>Throws <code>HeadroomCompressError</code></td>
+<td>Throws <code>HeadroomCompressError</code></td>
 </tr>
 </tbody>
 </table>
-<h2 id="per-transform-latency-breakdown">Per-Transform Latency Breakdown<a class="headerlink" href="#per-transform-latency-breakdown" title="Permanent link">&para;</a></h2>
+<h2 id="zero-dependencies">Zero Dependencies<a class="headerlink" href="#zero-dependencies" title="Permanent link">&para;</a></h2>
+<p>The <code>headroom-ai</code> package has no runtime dependencies. Framework SDKs (Vercel AI, OpenAI, Anthropic) are optional peer dependencies — only install what you use.</p>
+<h2 id="openclaw-plugin">OpenClaw Plugin<a class="headerlink" href="#openclaw-plugin" title="Permanent link">&para;</a></h2>
+<p>The TypeScript SDK powers the <a href="https://www.npmjs.com/package/headroom-openclaw"><code>headroom-openclaw</code></a> plugin for <a href="https://github.com/openclaw/openclaw">OpenClaw</a> agents. The plugin uses <code>HeadroomClient</code> internally to compress context during the <code>assemble()</code> lifecycle hook. The preferred install flow is <code>headroom wrap openclaw</code>; the direct plugin command is <code>openclaw plugins install --dangerously-force-unsafe-install headroom-ai/openclaw</code>. See the <a href="https://github.com/chopratejas/headroom/tree/main/plugins/openclaw">plugin source</a> for details.</p>
+<h2 id="comparison-with-python-sdk">Comparison with Python SDK<a class="headerlink" href="#comparison-with-python-sdk" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Scenario</th>
-<th>Transform</th>
-<th>p50 (ms)</th>
-<th>% of Total</th>
+<th>Feature</th>
+<th>Python SDK</th>
+<th>TypeScript SDK</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>JSON: Search Results (100 items)</td>
-<td>cache_aligner</td>
-<td>2.2</td>
-<td>1%</td>
+<td><code>compress()</code></td>
+<td>Native (runs locally)</td>
+<td>HTTP client (calls proxy)</td>
 </tr>
 <tr>
-<td>JSON: Search Results (100 items)</td>
-<td>content_router</td>
-<td>186</td>
-<td>98%</td>
+<td>Proxy</td>
+<td>Built-in server</td>
+<td>Connects to proxy</td>
 </tr>
 <tr>
-<td>JSON: Search Results (100 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
+<td>Vercel AI SDK</td>
+<td>N/A</td>
+<td>Middleware adapter</td>
 </tr>
 <tr>
-<td>JSON: Search Results (500 items)</td>
-<td>cache_aligner</td>
-<td>10.7</td>
-<td>1%</td>
+<td>OpenAI SDK</td>
+<td><code>HeadroomClient</code> wrapper</td>
+<td><code>withHeadroom()</code> wrapper</td>
 </tr>
 <tr>
-<td>JSON: Search Results (500 items)</td>
-<td>content_router</td>
-<td>927</td>
-<td>98%</td>
+<td>Anthropic SDK</td>
+<td><code>HeadroomClient</code> wrapper</td>
+<td><code>withHeadroom()</code> wrapper</td>
 </tr>
 <tr>
-<td>JSON: Search Results (500 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
+<td>LangChain</td>
+<td><code>HeadroomChatModel</code></td>
+<td>Use <code>compress()</code> directly</td>
 </tr>
 <tr>
-<td>JSON: Search Results (1K items)</td>
-<td>cache_aligner</td>
-<td>21.0</td>
-<td>1%</td>
+<td>Memory system</td>
+<td>Full (SQLite + HNSW)</td>
+<td>Not yet (use proxy)</td>
 </tr>
 <tr>
-<td>JSON: Search Results (1K items)</td>
-<td>content_router</td>
-<td>1980</td>
-<td>98%</td>
+<td>MCP server</td>
+<td>Built-in</td>
+<td>Not yet</td>
 </tr>
 <tr>
-<td>JSON: Search Results (1K items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>cache_aligner</td>
-<td>105</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>content_router</td>
-<td>11985</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>cache_aligner</td>
-<td>8.8</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>content_router</td>
-<td>729</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>cache_aligner</td>
-<td>9.3</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>content_router</td>
-<td>946</td>
-<td>99%</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>cache_aligner</td>
-<td>0.27</td>
-<td>2%</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>content_router</td>
-<td>14.5</td>
-<td>97%</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>cache_aligner</td>
-<td>0.95</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>content_router</td>
-<td>70.2</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>cache_aligner</td>
-<td>1.9</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>content_router</td>
-<td>143</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>cache_aligner</td>
-<td>0.66</td>
-<td>2%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>content_router</td>
-<td>29.6</td>
-<td>96%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>cache_aligner</td>
-<td>2.5</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>content_router</td>
-<td>297</td>
-<td>99%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>cache_aligner</td>
-<td>0.58</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>content_router</td>
-<td>37.4</td>
-<td>97%</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
+<td>CLI tools</td>
+<td><code>headroom proxy</code>, <code>headroom wrap</code>, etc.</td>
+<td>N/A (use Python CLI)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="cost-benefit-analysis">Cost-Benefit Analysis<a class="headerlink" href="#cost-benefit-analysis" title="Permanent link">&para;</a></h2>
-<p>Net latency benefit = LLM time saved from fewer tokens - compression overhead.</p>
-<table>
-<thead>
-<tr>
-<th>Scenario</th>
-<th>Compress (ms)</th>
-<th>LLM Saved (ms)*</th>
-<th>Net Benefit</th>
-<th>$/1K Requests**</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>189</td>
-<td>261</td>
-<td>+71.8ms</td>
-<td>$26.13</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>943</td>
-<td>1461</td>
-<td>+517.5ms</td>
-<td>$146.06</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>2012</td>
-<td>2969</td>
-<td>+956.9ms</td>
-<td>$296.91</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>12213</td>
-<td>15035</td>
-<td>+2822.2ms</td>
-<td>$1503.53</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>743</td>
-<td>1134</td>
-<td>+390.7ms</td>
-<td>$113.38</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>961</td>
-<td>1292</td>
-<td>+330.7ms</td>
-<td>$129.16</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>15.0</td>
-<td>24.6</td>
-<td>+9.6ms</td>
-<td>$2.46</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>71.9</td>
-<td>139</td>
-<td>+67.1ms</td>
-<td>$13.90</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>146</td>
-<td>282</td>
-<td>+135.9ms</td>
-<td>$28.16</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>30.9</td>
-<td>31.6</td>
-<td>+0.7ms</td>
-<td>$3.16</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>301</td>
-<td>175</td>
-<td>-126.3ms</td>
-<td>$17.45</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>38.4</td>
-<td>56.6</td>
-<td>+18.2ms</td>
-<td>$5.66</td>
-</tr>
-</tbody>
-</table>
-<p>* LLM time saved based on Claude Sonnet 4.5 prefill rate (0.03ms/token)
-** Cost savings at $3.0/MTok input pricing</p>
-<h2 id="break-even-across-models">Break-Even Across Models<a class="headerlink" href="#break-even-across-models" title="Permanent link">&para;</a></h2>
-<p>Compression overhead (p50) vs. LLM time saved for different model speed tiers:</p>
-<table>
-<thead>
-<tr>
-<th>Scenario</th>
-<th>Compress (ms)</th>
-<th>GPT-4o Mini</th>
-<th>GPT-4o</th>
-<th>Claude Sonnet 4.5</th>
-<th>Claude Opus 4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>189</td>
-<td>-102ms</td>
-<td>+71.8ms</td>
-<td>+71.8ms</td>
-<td>+507ms</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>943</td>
-<td>-456ms</td>
-<td>+518ms</td>
-<td>+518ms</td>
-<td>+2952ms</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>2012</td>
-<td>-1022ms</td>
-<td>+957ms</td>
-<td>+957ms</td>
-<td>+5905ms</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>12213</td>
-<td>-7201ms</td>
-<td>+2822ms</td>
-<td>+2822ms</td>
-<td>+27881ms</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>743</td>
-<td>-365ms</td>
-<td>+391ms</td>
-<td>+391ms</td>
-<td>+2280ms</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>961</td>
-<td>-530ms</td>
-<td>+331ms</td>
-<td>+331ms</td>
-<td>+2483ms</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>15.0</td>
-<td>-6.8ms</td>
-<td>+9.6ms</td>
-<td>+9.6ms</td>
-<td>+50.6ms</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>71.9</td>
-<td>-25.6ms</td>
-<td>+67.1ms</td>
-<td>+67.1ms</td>
-<td>+299ms</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>146</td>
-<td>-51.9ms</td>
-<td>+136ms</td>
-<td>+136ms</td>
-<td>+605ms</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>30.9</td>
-<td>-20.4ms</td>
-<td>+0.68ms</td>
-<td>+0.68ms</td>
-<td>+53.3ms</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>301</td>
-<td>-243ms</td>
-<td>-126ms</td>
-<td>-126ms</td>
-<td>+165ms</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>38.4</td>
-<td>-19.5ms</td>
-<td>+18.2ms</td>
-<td>+18.2ms</td>
-<td>+113ms</td>
-</tr>
-</tbody>
-</table>
-<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Compression pays for itself in latency</strong> for 11/12 compressing scenarios (json). For these, the LLM prefill time saved exceeds compression overhead.</li>
-<li><strong>ContentRouter is 98% of pipeline cost</strong> on average — it does the actual compression work. CacheAligner and context management are &lt;2% of total time.</li>
-<li><strong>Cost savings are substantial regardless of latency.</strong> The highest-compression scenario (JSON: Search Results (5K items)) saves $1504/1K requests at Claude Sonnet 4.5 pricing.</li>
-<li><strong>Slower/pricier models benefit most.</strong> Claude Opus shows a net latency win in 12/12 scenarios vs 11 for Claude Sonnet 4.5, with 0.08ms/token prefill.</li>
-</ol>
-<hr />
-<p><em>Benchmarks run with <code>python benchmarks/bench_latency.py</code>. Results vary based on hardware, Python version, and content characteristics.</em></p>
 
 
 

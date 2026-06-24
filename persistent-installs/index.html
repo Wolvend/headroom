@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://chopratejas.github.io/headroom/LATENCY_BENCHMARKS/">
+        <link rel="canonical" href="https://chopratejas.github.io/headroom/persistent-installs/">
       
       
-        <link rel="prev" href="../benchmarks/">
+        <link rel="prev" href="../docker-install/">
       
       
-        <link rel="next" href="../LIMITATIONS/">
+        <link rel="next" href="../configuration/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Latency - Headroom</title>
+        <title>Persistent Installs - Headroom</title>
       
     
     
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#headroom-latency-benchmarks" class="md-skip">
+        <a href="#persistent-installs" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Latency
+              Persistent Installs
             
           </span>
         </div>
@@ -245,10 +245,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../quickstart/" class="md-tabs__link">
           
   
@@ -333,12 +335,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../benchmarks/" class="md-tabs__link">
           
   
@@ -479,8 +479,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -498,21 +500,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -530,7 +533,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -629,10 +632,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../persistent-installs/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Persistent Installs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -648,6 +678,209 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#runtime-matrix" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Runtime matrix
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persistent-service-on-the-local-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistent service on the local machine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-watchdog-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistent watchdog task
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistent Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-surface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command surface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presets-and-runtime-kinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets and runtime kinds
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presets and runtime kinds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-kinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Runtime kinds
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration scopes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration scopes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#provider-scope-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider scope today
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provider-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider selection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health-and-wrap-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health and wrap behavior
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-native-relationship" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker-native relationship
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related guides
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1391,10 +1624,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -1408,22 +1639,21 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
   
@@ -1441,7 +1671,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1484,37 +1714,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Latency
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../LATENCY_BENCHMARKS/" class="md-nav__link">
         
   
   
@@ -1530,103 +1733,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Environment
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TL;DR
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#compression-overhead-by-scenario" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Compression Overhead by Scenario
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#per-transform-latency-breakdown" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Per-Transform Latency Breakdown
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-benefit-analysis" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost-Benefit Analysis
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#break-even-across-models" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Break-Even Across Models
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Takeaways
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -2060,10 +2166,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
+  <a href="#runtime-matrix" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Environment
+        Runtime matrix
       
     </span>
   </a>
@@ -2071,10 +2177,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tldr" class="md-nav__link">
+  <a href="#quick-examples" class="md-nav__link">
     <span class="md-ellipsis">
       
-        TL;DR
+        Quick examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#persistent-service-on-the-local-machine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistent service on the local machine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-watchdog-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistent watchdog task
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Persistent Docker
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-surface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Command surface
       
     </span>
   </a>
@@ -2082,10 +2238,77 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#compression-overhead-by-scenario" class="md-nav__link">
+  <a href="#presets-and-runtime-kinds" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Compression Overhead by Scenario
+        Presets and runtime kinds
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presets and runtime kinds">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runtime-kinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Runtime kinds
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration scopes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration scopes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#provider-scope-today" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider scope today
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#provider-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Provider selection
       
     </span>
   </a>
@@ -2093,10 +2316,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#per-transform-latency-breakdown" class="md-nav__link">
+  <a href="#health-and-wrap-behavior" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Per-Transform Latency Breakdown
+        Health and wrap behavior
       
     </span>
   </a>
@@ -2104,10 +2327,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-benefit-analysis" class="md-nav__link">
+  <a href="#docker-native-relationship" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost-Benefit Analysis
+        Docker-native relationship
       
     </span>
   </a>
@@ -2115,21 +2338,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#break-even-across-models" class="md-nav__link">
+  <a href="#related-guides" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Break-Even Across Models
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#key-takeaways" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Key Takeaways
+        Related guides
       
     </span>
   </a>
@@ -2156,613 +2368,194 @@
   
 
 
-<h1 id="headroom-latency-benchmarks">Headroom Latency Benchmarks<a class="headerlink" href="#headroom-latency-benchmarks" title="Permanent link">&para;</a></h1>
-<p>Measured compression overhead across content types and sizes to answer: <strong>does the token savings outweigh the processing time?</strong></p>
-<p>Generated: 2026-02-24 01:11 UTC</p>
-<h2 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h2>
+<h1 id="persistent-installs">Persistent Installs<a class="headerlink" href="#persistent-installs" title="Permanent link">&para;</a></h1>
+<p>Headroom can now be installed as a durable local runtime instead of only being started ad hoc with <code>headroom proxy</code> or <code>headroom wrap ...</code>.</p>
+<p>Use the Python-native <code>headroom install</code> CLI when you want supported tools to keep talking to an always-on proxy at <code>http://127.0.0.1:8787</code> and have <code>wrap</code> reuse or recover that deployment instead of starting a second ephemeral proxy.</p>
+<h2 id="runtime-matrix">Runtime matrix<a class="headerlink" href="#runtime-matrix" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Mode</th>
+<th>What stays running</th>
+<th>Primary entrypoint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Persistent Service</td>
+<td>Native background service</td>
+<td><code>headroom install apply --preset persistent-service</code></td>
+</tr>
+<tr>
+<td>Persistent Task</td>
+<td>Scheduled watchdog + on-demand runner</td>
+<td><code>headroom install apply --preset persistent-task</code></td>
+</tr>
+<tr>
+<td>Persistent Docker</td>
+<td>Restartable Docker container</td>
+<td><code>headroom install apply --preset persistent-docker</code></td>
+</tr>
+<tr>
+<td>On-Demand CLI (Python)</td>
+<td>Nothing after command exits</td>
+<td><code>headroom proxy</code></td>
+</tr>
+<tr>
+<td>On-Demand CLI (Docker)</td>
+<td>Nothing after container exits</td>
+<td>Docker-native wrapper / compose CLI</td>
+</tr>
+<tr>
+<td>Wrapped (Python)</td>
+<td>Proxy lasts for wrapped session</td>
+<td><code>headroom wrap ...</code></td>
+</tr>
+<tr>
+<td>Wrapped (Docker)</td>
+<td>Containerized proxy + host tool session</td>
+<td>Docker-native wrapper</td>
+</tr>
+</tbody>
+</table>
+<h2 id="quick-examples">Quick examples<a class="headerlink" href="#quick-examples" title="Permanent link">&para;</a></h2>
+<h3 id="persistent-service-on-the-local-machine">Persistent service on the local machine<a class="headerlink" href="#persistent-service-on-the-local-machine" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>headroom<span class="w"> </span>install<span class="w"> </span>apply<span class="w"> </span>--preset<span class="w"> </span>persistent-service<span class="w"> </span>--providers<span class="w"> </span>auto
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>headroom<span class="w"> </span>install<span class="w"> </span>status
+</span></code></pre></div>
+<p>This installs a background service on the current machine, applies persistent tool wiring, and keeps the proxy healthy on port <code>8787</code>.</p>
+<h3 id="persistent-watchdog-task">Persistent watchdog task<a class="headerlink" href="#persistent-watchdog-task" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>headroom<span class="w"> </span>install<span class="w"> </span>apply<span class="w"> </span>--preset<span class="w"> </span>persistent-task<span class="w"> </span>--providers<span class="w"> </span>manual<span class="w"> </span>--target<span class="w"> </span>claude<span class="w"> </span>--target<span class="w"> </span>codex
+</span></code></pre></div>
+<p>This installs a scheduled recovery path instead of a traditional always-running service.</p>
+<h3 id="persistent-docker">Persistent Docker<a class="headerlink" href="#persistent-docker" title="Permanent link">&para;</a></h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>headroom<span class="w"> </span>install<span class="w"> </span>apply<span class="w"> </span>--preset<span class="w"> </span>persistent-docker<span class="w"> </span>--scope<span class="w"> </span>user<span class="w"> </span>--providers<span class="w"> </span>auto
+</span></code></pre></div>
+<p>This uses Docker's restart policy instead of an OS supervisor.</p>
+<p>If you are using the Docker-native host wrapper instead of a Python install, you can now use <code>headroom install apply|status|start|stop|restart|remove</code> for the <code>persistent-docker</code> preset directly from the installed wrapper. Service/task installs and provider/user/system mutation flows still belong to the Python-native CLI.</p>
+<h2 id="command-surface">Command surface<a class="headerlink" href="#command-surface" title="Permanent link">&para;</a></h2>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>headroom install apply
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>headroom install status
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>headroom install start
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>headroom install stop
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>headroom install restart
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>headroom install remove
+</span></code></pre></div>
+<p><code>apply</code> creates or updates a named deployment profile, stores its manifest under <code>~/.headroom/deploy/&lt;profile&gt;/manifest.json</code>, applies reversible configuration changes, and starts the selected runtime.</p>
+<h2 id="presets-and-runtime-kinds">Presets and runtime kinds<a class="headerlink" href="#presets-and-runtime-kinds" title="Permanent link">&para;</a></h2>
+<h3 id="presets">Presets<a class="headerlink" href="#presets" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>Platform</strong>: macOS-26.1-arm64-arm-64bit</li>
-<li><strong>Processor</strong>: arm</li>
-<li><strong>Python</strong>: 3.11.11</li>
-<li><strong>Headroom</strong>: v0.3.7</li>
+<li><code>persistent-service</code> -&gt; native service supervisor</li>
+<li><code>persistent-task</code> -&gt; scheduled watchdog / recovery supervisor</li>
+<li><code>persistent-docker</code> -&gt; Docker restart policy with no extra OS supervisor</li>
 </ul>
+<h3 id="runtime-kinds">Runtime kinds<a class="headerlink" href="#runtime-kinds" title="Permanent link">&para;</a></h3>
+<ul>
+<li><code>--runtime python</code> runs <code>headroom proxy</code> directly</li>
+<li><code>--runtime docker</code> runs Headroom inside Docker while keeping the deployment managed locally</li>
+</ul>
+<p>For <code>persistent-docker</code>, the runtime is always Docker.</p>
+<h2 id="configuration-scopes">Configuration scopes<a class="headerlink" href="#configuration-scopes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>What changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>provider</code></td>
+<td>Tool-specific config surfaces where Headroom can make a precise reversible edit</td>
+</tr>
+<tr>
+<td><code>user</code></td>
+<td>User-level shell or environment surfaces</td>
+</tr>
+<tr>
+<td><code>system</code></td>
+<td>Machine-wide shell or environment surfaces</td>
+</tr>
+</tbody>
+</table>
+<h3 id="provider-scope-today">Provider scope today<a class="headerlink" href="#provider-scope-today" title="Permanent link">&para;</a></h3>
+<p>Provider scope is intentionally conservative. The current direct adapters are:</p>
+<ul>
+<li>Claude Code -&gt; <code>~/.claude/settings.json</code> <code>env</code></li>
+<li>Codex -&gt; managed block in <code>~/.codex/config.toml</code></li>
+<li>OpenClaw -&gt; existing <code>wrap openclaw</code> / <code>unwrap openclaw</code> flow</li>
+</ul>
+<p>For Copilot, Aider, Cursor, and broader env-driven setups, prefer <code>--scope user</code> or <code>--scope system</code>.</p>
+<h2 id="provider-selection">Provider selection<a class="headerlink" href="#provider-selection" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--providers auto</code></td>
+<td>Detect supported tools on the host and configure the best available defaults</td>
+</tr>
+<tr>
+<td><code>--providers all</code></td>
+<td>Configure all known targets</td>
+</tr>
+<tr>
+<td><code>--providers manual --target ...</code></td>
+<td>Configure only the named tools</td>
+</tr>
+</tbody>
+</table>
+<p>Examples:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>headroom<span class="w"> </span>install<span class="w"> </span>apply<span class="w"> </span>--providers<span class="w"> </span>auto
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>headroom<span class="w"> </span>install<span class="w"> </span>apply<span class="w"> </span>--providers<span class="w"> </span>all<span class="w"> </span>--scope<span class="w"> </span>user
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>headroom<span class="w"> </span>install<span class="w"> </span>apply<span class="w"> </span>--providers<span class="w"> </span>manual<span class="w"> </span>--target<span class="w"> </span>claude<span class="w"> </span>--target<span class="w"> </span>copilot
+</span></code></pre></div>
+<h2 id="health-and-wrap-behavior">Health and wrap behavior<a class="headerlink" href="#health-and-wrap-behavior" title="Permanent link">&para;</a></h2>
+<p>Persistent deployments publish the same <code>readyz</code> and <code>health</code> endpoints as ad hoc proxy runs.</p>
+<p><code>/health</code> now also exposes deployment metadata when the proxy was launched through the install subsystem:</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;deployment&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nt">&quot;profile&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;default&quot;</span><span class="p">,</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nt">&quot;preset&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;persistent-service&quot;</span><span class="p">,</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nt">&quot;runtime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;python&quot;</span><span class="p">,</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="nt">&quot;supervisor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;service&quot;</span><span class="p">,</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="nt">&quot;scope&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;user&quot;</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span><span class="p">}</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>The Python-native <code>headroom wrap ...</code> flow checks for a matching persistent deployment on the requested port before it starts a new ephemeral proxy. If an installed deployment exists but is stopped or unhealthy, it attempts to recover it first.</p>
+<p>The Docker-native host wrapper does <strong>not</strong> yet reuse or recover persistent profiles automatically; it still starts a fresh proxy container unless you opt into <code>--no-proxy</code>.</p>
+<h2 id="docker-native-relationship">Docker-native relationship<a class="headerlink" href="#docker-native-relationship" title="Permanent link">&para;</a></h2>
+<p>The Docker-native host wrapper and the Python install CLI solve different layers of the runtime story:</p>
+<ul>
+<li><a href="../docker-install/">Docker-Native Install</a> -&gt; containerized on-demand CLI, wrapped host-tool flows, and Docker-native <code>persistent-docker</code> lifecycle commands</li>
+<li><code>headroom install ...</code> -&gt; full persistent service, task, and Docker lifecycle management, including provider/user/system mutation</li>
+</ul>
+<p>For a no-Python persistent Docker workflow, use the compose-managed proxy path from <code>docker/docker-compose.native.yml</code>:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">HEADROOM_HOST_HOME</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">&quot;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">HEADROOM_WORKSPACE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$PWD</span><span class="s2">&quot;</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker/docker-compose.native.yml<span class="w"> </span>up<span class="w"> </span>-d<span class="w"> </span>proxy
+</span></code></pre></div>
+<p>That keeps <code>localhost:8787</code> stable and restarts the proxy automatically.</p>
 <blockquote>
-<p><strong>Note:</strong> These benchmarks were captured on v0.3.7. Since then, v0.5.6 added parallel message compression, eliminated redundant token counting, and optimized hot-path hashing. Expect lower latency on current versions. Re-benchmarking is planned.</p>
+<p><strong>Note:</strong> <code>HEADROOM_WORKSPACE</code> (the host-side bind-mount source used
+by the compose file) is <strong>not</strong> the same variable as
+<code>HEADROOM_WORKSPACE_DIR</code> (the canonical Headroom state root inside
+the container). Both are retained; the compose file sets the latter
+automatically. See <a href="../filesystem-contract/">Filesystem Contract</a> for
+the full bucket model.</p>
 </blockquote>
-<h2 id="tldr">TL;DR<a class="headerlink" href="#tldr" title="Permanent link">&para;</a></h2>
+<h2 id="related-guides">Related guides<a class="headerlink" href="#related-guides" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Average compression: <strong>93%</strong> token reduction</li>
-<li>Maximum compression overhead: <strong>12213ms</strong> (p50)</li>
-<li>Net latency win: <strong>11/12</strong> scenarios against Claude Sonnet 4.5</li>
+<li><a href="../cli/">CLI Reference</a></li>
+<li><a href="../docker-install/">Docker-Native Install</a></li>
+<li><a href="../proxy/">Proxy Server</a></li>
+<li><a href="../macos-deployment/">macOS LaunchAgent</a></li>
 </ul>
-<h2 id="compression-overhead-by-scenario">Compression Overhead by Scenario<a class="headerlink" href="#compression-overhead-by-scenario" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Scenario</th>
-<th>Tokens In</th>
-<th>Tokens Out</th>
-<th>Saved</th>
-<th>Ratio</th>
-<th>p50 (ms)</th>
-<th>p95 (ms)</th>
-<th>Mean (ms)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>10.2K</td>
-<td>1.5K</td>
-<td>8.7K</td>
-<td>86%</td>
-<td>189</td>
-<td>231</td>
-<td>196</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>50.2K</td>
-<td>1.5K</td>
-<td>48.7K</td>
-<td>97%</td>
-<td>943</td>
-<td>955</td>
-<td>943</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>100.5K</td>
-<td>1.5K</td>
-<td>99.0K</td>
-<td>99%</td>
-<td>2012</td>
-<td>2198</td>
-<td>2032</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>502.6K</td>
-<td>1.5K</td>
-<td>501.2K</td>
-<td>100%</td>
-<td>12213</td>
-<td>12804</td>
-<td>12223</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>38.9K</td>
-<td>1.1K</td>
-<td>37.8K</td>
-<td>97%</td>
-<td>743</td>
-<td>776</td>
-<td>744</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>43.7K</td>
-<td>605</td>
-<td>43.1K</td>
-<td>99%</td>
-<td>961</td>
-<td>1104</td>
-<td>986</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>1.1K</td>
-<td>231</td>
-<td>820</td>
-<td>78%</td>
-<td>15.0</td>
-<td>15.4</td>
-<td>15.0</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>4.9K</td>
-<td>233</td>
-<td>4.6K</td>
-<td>95%</td>
-<td>71.9</td>
-<td>80.3</td>
-<td>72.7</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>9.6K</td>
-<td>242</td>
-<td>9.4K</td>
-<td>97%</td>
-<td>146</td>
-<td>160</td>
-<td>147</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>1.2K</td>
-<td>192</td>
-<td>1.1K</td>
-<td>85%</td>
-<td>30.9</td>
-<td>61.9</td>
-<td>33.8</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>6.1K</td>
-<td>243</td>
-<td>5.8K</td>
-<td>96%</td>
-<td>301</td>
-<td>307</td>
-<td>300</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>2.3K</td>
-<td>368</td>
-<td>1.9K</td>
-<td>84%</td>
-<td>38.4</td>
-<td>39.8</td>
-<td>38.4</td>
-</tr>
-</tbody>
-</table>
-<h2 id="per-transform-latency-breakdown">Per-Transform Latency Breakdown<a class="headerlink" href="#per-transform-latency-breakdown" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>Scenario</th>
-<th>Transform</th>
-<th>p50 (ms)</th>
-<th>% of Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>cache_aligner</td>
-<td>2.2</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>content_router</td>
-<td>186</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>cache_aligner</td>
-<td>10.7</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>content_router</td>
-<td>927</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>cache_aligner</td>
-<td>21.0</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>content_router</td>
-<td>1980</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>cache_aligner</td>
-<td>105</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>content_router</td>
-<td>11985</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>cache_aligner</td>
-<td>8.8</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>content_router</td>
-<td>729</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>cache_aligner</td>
-<td>9.3</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>content_router</td>
-<td>946</td>
-<td>99%</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>cache_aligner</td>
-<td>0.27</td>
-<td>2%</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>content_router</td>
-<td>14.5</td>
-<td>97%</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>cache_aligner</td>
-<td>0.95</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>content_router</td>
-<td>70.2</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>cache_aligner</td>
-<td>1.9</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>content_router</td>
-<td>143</td>
-<td>98%</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>cache_aligner</td>
-<td>0.66</td>
-<td>2%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>content_router</td>
-<td>29.6</td>
-<td>96%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>cache_aligner</td>
-<td>2.5</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>content_router</td>
-<td>297</td>
-<td>99%</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>cache_aligner</td>
-<td>0.58</td>
-<td>1%</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>content_router</td>
-<td>37.4</td>
-<td>97%</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>rolling_window</td>
-<td>&lt;0.01</td>
-<td>0%</td>
-</tr>
-</tbody>
-</table>
-<h2 id="cost-benefit-analysis">Cost-Benefit Analysis<a class="headerlink" href="#cost-benefit-analysis" title="Permanent link">&para;</a></h2>
-<p>Net latency benefit = LLM time saved from fewer tokens - compression overhead.</p>
-<table>
-<thead>
-<tr>
-<th>Scenario</th>
-<th>Compress (ms)</th>
-<th>LLM Saved (ms)*</th>
-<th>Net Benefit</th>
-<th>$/1K Requests**</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>189</td>
-<td>261</td>
-<td>+71.8ms</td>
-<td>$26.13</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>943</td>
-<td>1461</td>
-<td>+517.5ms</td>
-<td>$146.06</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>2012</td>
-<td>2969</td>
-<td>+956.9ms</td>
-<td>$296.91</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>12213</td>
-<td>15035</td>
-<td>+2822.2ms</td>
-<td>$1503.53</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>743</td>
-<td>1134</td>
-<td>+390.7ms</td>
-<td>$113.38</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>961</td>
-<td>1292</td>
-<td>+330.7ms</td>
-<td>$129.16</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>15.0</td>
-<td>24.6</td>
-<td>+9.6ms</td>
-<td>$2.46</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>71.9</td>
-<td>139</td>
-<td>+67.1ms</td>
-<td>$13.90</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>146</td>
-<td>282</td>
-<td>+135.9ms</td>
-<td>$28.16</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>30.9</td>
-<td>31.6</td>
-<td>+0.7ms</td>
-<td>$3.16</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>301</td>
-<td>175</td>
-<td>-126.3ms</td>
-<td>$17.45</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>38.4</td>
-<td>56.6</td>
-<td>+18.2ms</td>
-<td>$5.66</td>
-</tr>
-</tbody>
-</table>
-<p>* LLM time saved based on Claude Sonnet 4.5 prefill rate (0.03ms/token)
-** Cost savings at $3.0/MTok input pricing</p>
-<h2 id="break-even-across-models">Break-Even Across Models<a class="headerlink" href="#break-even-across-models" title="Permanent link">&para;</a></h2>
-<p>Compression overhead (p50) vs. LLM time saved for different model speed tiers:</p>
-<table>
-<thead>
-<tr>
-<th>Scenario</th>
-<th>Compress (ms)</th>
-<th>GPT-4o Mini</th>
-<th>GPT-4o</th>
-<th>Claude Sonnet 4.5</th>
-<th>Claude Opus 4</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>JSON: Search Results (100 items)</td>
-<td>189</td>
-<td>-102ms</td>
-<td>+71.8ms</td>
-<td>+71.8ms</td>
-<td>+507ms</td>
-</tr>
-<tr>
-<td>JSON: Search Results (500 items)</td>
-<td>943</td>
-<td>-456ms</td>
-<td>+518ms</td>
-<td>+518ms</td>
-<td>+2952ms</td>
-</tr>
-<tr>
-<td>JSON: Search Results (1K items)</td>
-<td>2012</td>
-<td>-1022ms</td>
-<td>+957ms</td>
-<td>+957ms</td>
-<td>+5905ms</td>
-</tr>
-<tr>
-<td>JSON: Search Results (5K items)</td>
-<td>12213</td>
-<td>-7201ms</td>
-<td>+2822ms</td>
-<td>+2822ms</td>
-<td>+27881ms</td>
-</tr>
-<tr>
-<td>JSON: API Responses (500 items)</td>
-<td>743</td>
-<td>-365ms</td>
-<td>+391ms</td>
-<td>+391ms</td>
-<td>+2280ms</td>
-</tr>
-<tr>
-<td>JSON: Database Rows (1K rows)</td>
-<td>961</td>
-<td>-530ms</td>
-<td>+331ms</td>
-<td>+331ms</td>
-<td>+2483ms</td>
-</tr>
-<tr>
-<td>JSON: String Array (100 strings)</td>
-<td>15.0</td>
-<td>-6.8ms</td>
-<td>+9.6ms</td>
-<td>+9.6ms</td>
-<td>+50.6ms</td>
-</tr>
-<tr>
-<td>JSON: String Array (500 strings)</td>
-<td>71.9</td>
-<td>-25.6ms</td>
-<td>+67.1ms</td>
-<td>+67.1ms</td>
-<td>+299ms</td>
-</tr>
-<tr>
-<td>JSON: String Array (1K strings)</td>
-<td>146</td>
-<td>-51.9ms</td>
-<td>+136ms</td>
-<td>+136ms</td>
-<td>+605ms</td>
-</tr>
-<tr>
-<td>JSON: Number Array (200 numbers)</td>
-<td>30.9</td>
-<td>-20.4ms</td>
-<td>+0.68ms</td>
-<td>+0.68ms</td>
-<td>+53.3ms</td>
-</tr>
-<tr>
-<td>JSON: Number Array (1K numbers)</td>
-<td>301</td>
-<td>-243ms</td>
-<td>-126ms</td>
-<td>-126ms</td>
-<td>+165ms</td>
-</tr>
-<tr>
-<td>JSON: Mixed Array (250 items)</td>
-<td>38.4</td>
-<td>-19.5ms</td>
-<td>+18.2ms</td>
-<td>+18.2ms</td>
-<td>+113ms</td>
-</tr>
-</tbody>
-</table>
-<h2 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Compression pays for itself in latency</strong> for 11/12 compressing scenarios (json). For these, the LLM prefill time saved exceeds compression overhead.</li>
-<li><strong>ContentRouter is 98% of pipeline cost</strong> on average — it does the actual compression work. CacheAligner and context management are &lt;2% of total time.</li>
-<li><strong>Cost savings are substantial regardless of latency.</strong> The highest-compression scenario (JSON: Search Results (5K items)) saves $1504/1K requests at Claude Sonnet 4.5 pricing.</li>
-<li><strong>Slower/pricier models benefit most.</strong> Claude Opus shows a net latency win in 12/12 scenarios vs 11 for Claude Sonnet 4.5, with 0.08ms/token prefill.</li>
-</ol>
-<hr />
-<p><em>Benchmarks run with <code>python benchmarks/bench_latency.py</code>. Results vary based on hardware, Python version, and content characteristics.</em></p>
 
 
 
